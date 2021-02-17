@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_test_ingredient_components",
+  "info": {
+    "name": "Ingredient Component",
+    "icon": "dot-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Unit": {
+      "type": "enumeration",
+      "enum": [
+        "cup",
+        "tbsp",
+        "tsp",
+        "lb",
+        "oz",
+        "g",
+        "whole",
+        "half",
+        "quarter"
+      ],
+      "required": true
+    },
+    "Quantity": {
+      "type": "decimal",
+      "required": true
+    },
+    "ingredient": {
+      "model": "ingredient"
+    },
+    "Preparation": {
+      "type": "string"
+    }
+  }
+}

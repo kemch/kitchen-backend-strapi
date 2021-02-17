@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "recipes",
   "info": {
-    "name": "Recipe"
+    "name": "Recipe",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -15,6 +16,11 @@
     },
     "Recipe": {
       "type": "richtext"
+    },
+    "IngredientList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-content.ingredient-component"
     }
   }
 }
