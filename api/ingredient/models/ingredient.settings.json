@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "ingredients",
   "info": {
-    "name": "Ingredient"
+    "name": "Ingredient",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,7 +13,8 @@
   "attributes": {
     "Name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     }
   }
 }
