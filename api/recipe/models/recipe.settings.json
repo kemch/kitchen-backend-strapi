@@ -21,6 +21,30 @@
       "type": "component",
       "repeatable": true,
       "component": "recipe-content.ingredient-component"
+    },
+    "IngredientSection1Heading": {
+      "type": "string",
+      "default": "Ingredients"
+    },
+    "IngredientsSection2Heading": {
+      "type": "string"
+    },
+    "IngredientsList2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-content.ingredient-component"
+    },
+    "IngredientsSection3Heading": {
+      "type": "string"
+    },
+    "IngredientsList3": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-content.ingredient-component"
+    },
+    "ServingSize": {
+      "type": "decimal",
+      "default": 1
     }
   }
 }
