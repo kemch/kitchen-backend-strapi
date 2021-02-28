@@ -31,6 +31,9 @@
     },
     "Preparation": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
