@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "tag_name": {
+      "type": "string"
+    },
+    "recipes": {
+      "collection": "recipe",
+      "via": "tags"
+    },
+    "tag_name_short": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "green",
+        "purple",
+        "pink",
+        "orange",
+        "yellow",
+        "grey"
+      ]
+    }
+  }
+}

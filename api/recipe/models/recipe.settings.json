@@ -45,6 +45,11 @@
     "ServingSize": {
       "type": "decimal",
       "default": 1
+    },
+    "tags": {
+      "via": "recipes",
+      "collection": "tag",
+      "dominant": true
     }
   }
 }
