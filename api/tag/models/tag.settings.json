@@ -15,8 +15,8 @@
       "type": "string"
     },
     "recipes": {
-      "collection": "recipe",
-      "via": "tags"
+      "via": "tags",
+      "collection": "recipe"
     },
     "tag_name_short": {
       "type": "string"

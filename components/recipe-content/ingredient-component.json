@@ -34,6 +34,13 @@
     },
     "slug": {
       "type": "string"
+    },
+    "HeadingOnly": {
+      "type": "boolean",
+      "default": false
+    },
+    "Heading": {
+      "type": "string"
     }
   }
 }
