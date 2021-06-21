@@ -17,12 +17,18 @@ module.exports = {
         const name = res[0].Name;
         const qty= data.IngredientList[i].Quantity;
         const unit= data.IngredientList[i].Unit;
+        const isHeading = data.IngredientList[i].HeadingOnly;
         let prep = '';
         if (data.IngredientList[i].Preparation != null) {
           prep = data.IngredientList[i].Preparation;
         }
 
-        const line = `${qty} ${unit} ${name} ${prep}`;
+        let line;
+        if (isHeading) {
+          line = `${data.IngredientList[i].Heading}`;
+        } else {
+          line = `${qty} ${unit} ${name} ${prep}`;
+        }
         data.IngredientList[i].slug = line;
       }
     },
@@ -35,12 +41,18 @@ module.exports = {
           const name = res[0].Name;
           const qty= data.IngredientList[i].Quantity;
           const unit= data.IngredientList[i].Unit;
+          const isHeading = data.IngredientList[i].HeadingOnly;
           let prep = '';
           if (data.IngredientList[i].Preparation != null) {
             prep = data.IngredientList[i].Preparation;
           }
 
-          const line = `${qty} ${unit} ${name} ${prep}`;
+          let line;
+          if (isHeading) {
+            line = `${data.IngredientList[i].Heading}`;
+          } else {
+            line = `${qty} ${unit} ${name} ${prep}`;
+          }
           data.IngredientList[i].slug = line;
         }
       }

@@ -20,11 +20,11 @@
         "half",
         "quarter"
       ],
-      "required": true
+      "required": false
     },
     "Quantity": {
       "type": "decimal",
-      "required": true
+      "required": false
     },
     "ingredient": {
       "model": "ingredient"
