@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_recipe_category_recipes",
+  "info": {
+    "name": "Recipe",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "recipes": {
+      "collection": "recipe"
+    }
+  }
+}
