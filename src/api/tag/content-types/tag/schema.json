@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tag",
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "tag_name": {
+      "type": "string"
+    },
+    "recipes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recipe.recipe",
+      "mappedBy": "tags"
+    },
+    "tag_name_short": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "green",
+        "purple",
+        "pink",
+        "orange",
+        "yellow",
+        "grey"
+      ]
+    }
+  }
+}

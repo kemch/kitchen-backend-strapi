@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_recipe_category_recipes",
+  "info": {
+    "icon": "atlas",
+    "displayName": "Recipe"
+  },
+  "options": {},
+  "attributes": {
+    "recipes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe"
+    }
+  }
+}

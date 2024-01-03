@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingredients",
+  "info": {
+    "singularName": "ingredient",
+    "pluralName": "ingredients",
+    "displayName": "Ingredient",
+    "name": "ingredient"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

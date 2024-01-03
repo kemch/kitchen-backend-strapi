@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_test_ingredient_components",
+  "info": {
+    "icon": "dot-circle",
+    "description": "",
+    "displayName": "Ingredient Component"
+  },
+  "options": {},
+  "attributes": {
+    "Unit": {
+      "type": "enumeration",
+      "enum": [
+        "cup",
+        "tbsp",
+        "tsp",
+        "lb",
+        "oz",
+        "g",
+        "whole",
+        "half",
+        "quarter"
+      ],
+      "required": false
+    },
+    "Quantity": {
+      "type": "decimal",
+      "required": false
+    },
+    "ingredient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ingredient.ingredient"
+    },
+    "Preparation": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "HeadingOnly": {
+      "type": "boolean",
+      "default": false
+    },
+    "Heading": {
+      "type": "string"
+    }
+  }
+}

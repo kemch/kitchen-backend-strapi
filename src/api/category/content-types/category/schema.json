@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Category",
+    "name": "category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "CategoryName": {
+      "type": "string"
+    },
+    "Recipes": {
+      "type": "dynamiczone",
+      "components": [
+        "recipe-category.recipe"
+      ]
+    }
+  }
+}
